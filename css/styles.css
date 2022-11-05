@@ -730,12 +730,12 @@ color: var(--primary-white-color);
 
 }
 .subscription{
-  display:flex;
-  align-items: center;
-  justify-content:center;
+ position: relative;
+ margin-left: auto;
+}
+.subscription-wrap{
+  display: flex;
   gap: 12px;
-  
-  
 }
 .subscription-label{
 font-family: 'Roboto';
@@ -748,7 +748,7 @@ text-transform: uppercase;
 color: #FFFFFF;
 margin-bottom: 20px;
 display: block;
-align-items: center;
+text-align: left;
 
 }
 .subscription-button{
@@ -758,11 +758,15 @@ background: #2196F3;
 box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 border-radius: 4px;
 color: #FFFFFF;
-text-align: center;
+font-family: 'Roboto', sans-serif;
+font-weight: 700;
+font-size: 16px;
 justify-content: center;
-display: inline-block;
+display: flex;
+align-items: center;
 padding: 10px 28px;
 border: none;
+gap: 10px;
 }
 .subscription-input{
 width: 358px;
@@ -772,6 +776,7 @@ filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
 border-radius: 4px;
 background-color: transparent;
 padding-left: 16px;
+outline: none;
 }
 
 
@@ -814,6 +819,11 @@ padding-left: 16px;
   justify-content: center;
   cursor: pointer;
 }
+
+.modal-close-icon:hover,
+.modal-close-icon:focus{
+fill:#2196F3
+}
 .backdrop.is-hidden{
   opacity: 0;
   visibility: hidden;
@@ -844,6 +854,7 @@ margin-bottom: 12px;
   position: relative;
  
 }
+
 .modal-field{
   margin-bottom: 10px;
 }
@@ -898,9 +909,8 @@ color: rgba(117, 117, 117, 0.5);
 .checkbox-label{
 display: flex;
 align-items: center;
-font-family: 'Roboto';
-font-style: normal;
-font-weight: 400;
+justify-content: center;
+font-family: 'Roboto', sans-serif;
 font-size: 14px;
 line-height: 1.71;
 color: #757575;
@@ -913,6 +923,9 @@ gap: 7px;
   height: 15px;
   border: 2px solid #212121;
   border-radius: 4px;
+}
+.checkbox-link{
+  color: #2196F3;
 }
 .checkbox:checked + .checkbox-icon{
   border-color: #2196F3;

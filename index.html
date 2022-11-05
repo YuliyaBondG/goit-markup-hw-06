@@ -326,8 +326,9 @@ href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-norma
                         </li>
                     </ul>                    
             </div>  
-            <div class="subscription">
+            <form class="subscription">
                 <label for="subscription-email" class="subscription-label">Підпишіться на розсилку</label>
+                <div class="subscription-wrap">
                 <input 
                 type="email" 
                 name="subscription-email" class="subscription-input"
@@ -338,7 +339,8 @@ href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-norma
                         <use href="./images/icons.svg.svg#icon-send"></use>
                     </svg>
                 </button>
-            </div>        
+            </div>
+            </form>        
             </div>  
            
         </footer> 
@@ -401,11 +403,12 @@ href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-norma
                     name="user-coment" 
                     id="user-coment" 
                     class="modal-text"
+                    rows="6"
                     placeholder="Введіть текст"></textarea>
                     <label class="checkbox-label">
                     <input class="checkbox" type="checkbox" name="agree" value="agree"/>
                     <span class="checkbox-icon"></span>
-                    Погоджуюся з розсилкою та приймаю  <a href="#">Умови договору</a>
+                    Погоджуюся з розсилкою та приймаю  <a href="#" class="checkbox-link">Умови договору</a>
                     </label>                                
                    
                     <button type="submit" class="checkbox-button">Відправити</button>
